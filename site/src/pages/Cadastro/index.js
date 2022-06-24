@@ -1,5 +1,5 @@
 
-import {CadastreVilao} from '../../api/usuarioAPI'
+import {CadastreVilao} from '../../api/usuarioAPI.js'
 export default function Cad() { 
 
     const [nmvilao, setNomeVilao] = useState('');
@@ -28,7 +28,7 @@ export default function Cad() {
                     <label class="lab">  As suas maldades </label>
                     <input id="nm_maladades" name="maladades" required="required" type="maladades" 
                     className='maldades'
-                    placeholder="Insira as maldades :("  value={malades} onChange={e => setMalades(e.target.value)}/>
+                    placeholder="Insira as maldades :("  value={nmmalades} onChange={e => setMaladades(e.target.value)}/>
                     </p>
                     
                 
