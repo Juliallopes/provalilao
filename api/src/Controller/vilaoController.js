@@ -18,7 +18,7 @@ server.post('/vilao', async (req, resp) => {
     }
 })
 
-server.get('/vilaozinho', async (req, resp) => {
+server.get('/vilaozinho/id', async (req, resp) => {
     try {
         const resposta = await ConsultarVilao();
         resp.send(resposta);
